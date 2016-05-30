@@ -46,7 +46,7 @@
 		writer.println(session.getAttribute("Point").toString());
 		writer.close();
 		
-		reader = new BufferedReader(new FileReader(fPath + "/" + session.getAttribute("Id") + "_구매기록.txt"));
+		reader = new BufferedReader(new FileReader(fPath + "/" + session.getAttribute("Id") + "_이용내역.txt"));
 		
 		ArrayList<String> list = new ArrayList<String>();
 		int i = 1;
@@ -57,7 +57,7 @@
 			i++;
 		}
 	
-		writer = new PrintWriter(fPath + "/" + session.getAttribute("Id") + "_구매기록.txt", "UTF-8");
+		writer = new PrintWriter(fPath + "/" + session.getAttribute("Id") + "_이용내역.txt", "UTF-8");
 		for(String str : list){
 			StringTokenizer values = new StringTokenizer(str, "|");
 			while(values.hasMoreElements()){

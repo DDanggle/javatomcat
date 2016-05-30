@@ -50,7 +50,7 @@
 			</div><BR>
 		</section>
 		<section class="footer">
-			<p>Copyright 2016 by CNU 201402441 Se-mok, Choi</p>		
+			<p>201402386 이동근</p>		
 		</section>
 	</body>
 </html>

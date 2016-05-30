@@ -26,7 +26,7 @@
 		BufferedReader reader = null;
 		String fPath = application.getRealPath("/Users");
 		String product = "";
-		reader = new BufferedReader(new FileReader(fPath+"/"+id+"_구매기록.txt"));
+		reader = new BufferedReader(new FileReader(fPath+"/"+id+"_이용내역.txt"));
 		ArrayList<String> list = new ArrayList<String>();
 		int i = 1;
 		String log;
@@ -38,7 +38,7 @@
 		
 		reader.close();
 		
-		PrintWriter writer = new PrintWriter(fPath+"/"+id+"_구매기록.txt", "UTF-8");
+		PrintWriter writer = new PrintWriter(fPath+"/"+id+"_이용내역.txt", "UTF-8");
 		for(String str : list){
 			StringTokenizer values = new StringTokenizer(str, "|");
 			String logIndex = values.nextToken();

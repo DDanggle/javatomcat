@@ -24,7 +24,7 @@
 	
 	PrintWriter pw = response.getWriter();
 	try{
-		reader = new BufferedReader(new FileReader(directory+"/"+id+"_구매기록.txt"));
+		reader = new BufferedReader(new FileReader(directory+"/"+id+"_이용내역.txt"));
 		ArrayList<String> list = new ArrayList<String>();
 		int i = 1;
 		String log;

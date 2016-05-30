@@ -32,10 +32,10 @@
 			writer.println(pw);
 			writer.println(50000);
 			result = "TRUE";
-		}catch(Exception e){
+		} catch(Exception e) {
 			result = "FAIL";
 		}
-		String temp = "_구매기록.txt";
+		String temp = "_이용내역.txt";
 		fPath = application.getRealPath("/Users/")+id+temp;
 		try {
 			PrintWriter writer = new PrintWriter(fPath, "UTF-8");
