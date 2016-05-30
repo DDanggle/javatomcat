@@ -26,24 +26,24 @@
 	if(isExist){
 		result = "FAIL";
 	}else{
-		fPath = application.getRealPath("/Users/"+ id +".txt");
+		fPath = application.getRealPath("/Users/"+id+".txt");
 		try {
 			PrintWriter writer = new PrintWriter(fPath, "UTF-8");
-			writer.println(pw); // 비밀번호
-			writer.println(50000); // 포인트
-			result = fpath;
-		} catch(Exception e) {
+			writer.println(pw);
+			writer.println(50000);
+			result = "TRUE";
+		}catch(Exception e){
 			result = "FAIL";
 		}
-		String temp = "_이용내역.txt";
-		fPath = application.getRealPath("/Users/") + id + temp;
+		String temp = "_구매기록.txt";
+		fPath = application.getRealPath("/Users/")+id+temp;
 		try {
 			PrintWriter writer = new PrintWriter(fPath, "UTF-8");
-			result = fpath;
-		} catch(Exception e) {
+			result = "TRUE";
+		}catch(Exception e){
 			result = "FAIL";
 		}
 	}
 	
-	response.sendRedirect("register.jsp?result="+result);
+	response.sendRedirect("register.jsp?RESULT="+result);
 %>

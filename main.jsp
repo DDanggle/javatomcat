@@ -84,7 +84,7 @@
 
 		</section>
 		<section class="footer">
-			<p>201402386 이동근 제작</p>		
+			<p>Copyright 2016 by CNU 201402441 Se-mok, Choi</p>		
 		</section>
 	</body>
 </html>

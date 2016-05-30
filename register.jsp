@@ -13,14 +13,15 @@
 	<body>
 		<section class="term">
 			<h3>이용 약관</h3>
-			<p>웹프로그래밍 3차 숙제</p>
-			<p>아이디와 비밀번호를 인풋 값에 넣어주세요.</p>
+			<p>CNU-CS WebProgramming 과제를 위한 사이트입니다.</p>
+			<p>입력창에 사용하실 ID와 PW를 입력 후, 가입 버튼을 누르시면 가입이 완료됩니다.</p>
+			<p>회원 탈퇴 기능은 제공하지 않으니, 가입 전에 유의하시기 바랍니다.</p>
 		</section>
 		<section class="regist">
 			<form action="regUser.jsp" method="POST" id="register">
 				<table align="center">
 					<tr><td>ID : </td><td><input type="text" name="id" required/></tr>
-					<tr><td>PW : </td><td><input type="password" name="pw" required/></tr>
+					<tr><td>PW : </td><td><input type="text" name="pw" required/></tr>
 				</table>
 				<input type="submit" value="가입"/>
 			</form>
@@ -32,7 +33,7 @@
 					if(result.equals("TRUE"))
 						p.println("alert('회원 가입이 완료되었습니다.')");
 					else
-						p.println("alert('존재하지 않는 아이디')");
+						p.println("alert('존재하는 계정입니다.')");
 					p.println("location='index.jsp';");
 					p.println("</script>");
 				}

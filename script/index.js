@@ -8,7 +8,7 @@
 function alertlog(){
 	var query = window.location.search.substring(1);
 	if(query == "FALSE"){
-		alert("존재하지않는 아이디이거나 비밀번호 틀림");
+		alert("비밀번호가 일치하지 않거나 존재하지 않는 아이디입니다.");
 		location.href="main.jsp";
 	}
 }
