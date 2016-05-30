@@ -27,7 +27,8 @@
 		result = "FAIL";
 	}else{
 		fPath = application.getRealPath("/Users/"+ id +".txt");
-		try(PrintWriter writer = new PrintWriter(fPath, "UTF-8")){
+		try {
+			PrintWriter writer = new PrintWriter(fPath, "UTF-8");
 			writer.println(pw); // 비밀번호
 			writer.println(50000); // 포인트
 			result = "TRUE";
@@ -36,9 +37,10 @@
 		}
 		String temp = "_이용내역.txt";
 		fPath = application.getRealPath("/Users/") + id + temp;
-		try(PrintWriter writer = new PrintWriter(fPath, "UTF-8")){
+		try {
+			PrintWriter writer = new PrintWriter(fPath, "UTF-8");
 			result = "TRUE";
-		}catch(Exception e){
+		} catch(Exception e) {
 			result = "FAIL";
 		}
 	}
