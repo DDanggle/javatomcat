@@ -20,7 +20,7 @@
 			<form action="regUser.jsp" method="POST" id="register">
 				<table align="center">
 					<tr><td>ID : </td><td><input type="text" name="id" required/></tr>
-					<tr><td>PW : </td><td><input type="text" name="pw" required/></tr>
+					<tr><td>PW : </td><td><input type="password" name="pw" required/></tr>
 				</table>
 				<input type="submit" value="가입"/>
 			</form>
