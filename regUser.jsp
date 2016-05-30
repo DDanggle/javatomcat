@@ -45,5 +45,5 @@
 		}
 	}
 	
-	response.sendRedirect("register.jsp?RESULT="+result);
+	response.sendRedirect("register.jsp?result="+result);
 %>
