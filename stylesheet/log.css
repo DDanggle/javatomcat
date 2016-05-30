@@ -1,0 +1,49 @@
+section.header{
+	width:99%;
+	height:12%;
+	border: 1px solid;
+	position:absolute;
+	text-align:center;
+}
+
+section.log{
+	width:67%;
+	height:72%;
+	border:1px solid;
+	float:left;
+	position:absolute;
+	top:14%;
+	overflow: scroll;
+}
+
+section.userInfo{
+	width:32%;
+	position:fixed;
+	top:17%;
+	right:0;
+}
+
+section.footer{
+	width:99%;
+	height:5%;
+	border:1px solid;
+	position:absolute;
+	bottom:3px;
+	text-align:center;
+}
+
+div{
+	border: 1px solid;
+}
+
+table{
+	width:80%;
+	border: 1px solid;
+	border-collapse: collapse;
+}
+td{
+	border: 1px solid;
+}
+th{
+	border: 1px solid;
+}

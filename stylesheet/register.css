@@ -1,0 +1,19 @@
+body{
+	text-align:center;
+}
+
+section.term{
+	position: relative;
+	left:15%;
+	width:70%;
+	height:300px;
+	overflow:scroll;
+	border:1px solid;
+}
+
+section.regist{
+	position: relative;
+	left: 15%;
+	width: 70%;
+	border:1px solid;
+}

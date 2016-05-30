@@ -1,0 +1,52 @@
+section.header{
+	width:99%;
+	height:12%;
+	border: 1px solid;
+	position:absolute;
+	text-align:center;
+}
+
+section.main{
+	width:67%;
+	height:72%;
+	border:1px solid;
+	float:left;
+	position:absolute;
+	top:14%;
+}
+
+section.userInfo{
+	width:32%;
+	position:fixed;
+	top:17%;
+	right:0;
+}
+
+section.footer{
+	width:99%;
+	height:5%;
+	border:1px solid;
+	position:absolute;
+	bottom:3px;
+	text-align:center;
+}
+
+div{
+	border: 1px solid;
+}
+
+#products{
+	width:49%;
+	height: 35%;
+	float:left;
+}
+
+img{
+	width: 100px;
+	height: 100%;
+	float:left;
+}
+
+#purchase{
+	display: hidden;
+}
