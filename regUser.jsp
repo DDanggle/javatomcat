@@ -31,7 +31,7 @@
 			PrintWriter writer = new PrintWriter(fPath, "UTF-8");
 			writer.println(pw); // 비밀번호
 			writer.println(50000); // 포인트
-			result = "TRUE";
+			result = fpath;
 		} catch(Exception e) {
 			result = "FAIL";
 		}
@@ -39,7 +39,7 @@
 		fPath = application.getRealPath("/Users/") + id + temp;
 		try {
 			PrintWriter writer = new PrintWriter(fPath, "UTF-8");
-			result = "TRUE";
+			result = fpath;
 		} catch(Exception e) {
 			result = "FAIL";
 		}
