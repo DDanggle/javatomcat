@@ -36,7 +36,13 @@
 		} catch(Exception e) {
 			result = "FAIL";
 		}
-		
+		fPath = application.getRealPath("/Users/"+id+"_이용내역.txt");
+		try {
+			writer = new PrintWriter(fPath, "UTF-8");
+			result = "TRUE";
+		} catch(Exception e) {
+			result = "FAIL";
+		}
 	}
 	
 	response.sendRedirect("register.jsp?RESULT="+result);
