@@ -27,7 +27,9 @@
 	if(isExist){
 		result = "FAIL";
 	}else{
+		fPath = application.getRealPath("/Users/"+id+".txt");		
 		
+			
 		
 		fPath = application.getRealPath("/Users/"+id+"_이용내역.txt");
 		try {
