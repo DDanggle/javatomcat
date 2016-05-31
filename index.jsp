@@ -19,7 +19,7 @@
 		<form action="confirm.jsp" id="login" method="post">
 			<table>
 			<tr><td>ID : </td><td><input type="text" name="id" required/></td></tr>
-			<tr><td>PW : </td><td><input type="text" name="pw" required/></td></tr>
+			<tr><td>PW : </td><td><input type="password" name="pw" required/></td></tr>
 			</table>
 			<input type="submit" value="로그인"/>
 			<input type="button" id="register" value="회원 가입"/>
