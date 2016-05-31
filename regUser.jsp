@@ -8,6 +8,7 @@
 	String pw = request.getParameter("pw");
 	
 	boolean isExist = false;
+	PrintWriter writer = null;
 	String fPath = application.getRealPath("/Users");
 	File directory = new File(fPath);
 	
@@ -28,19 +29,18 @@
 	}else{
 		fPath = application.getRealPath("/Users/"+id+".txt");		
 		try {
-			PrintWriter writer = new PrintWriter(fPath, "UTF-8");
+			writer = new PrintWriter(fPath, "UTF-8");
 			writer.println(pw);
 			writer.println(50000);
 			result = "TRUE";
 		} catch(Exception e) {
 			result = "FAIL";
 		}
-		String temp = "_이용내역.txt";
-			fPath = application.getRealPath("/Users/"+id+temp);
-			try {
-				PrintWriter writer = new PrintWriter(fPath, "UTF-8");
-				result = "TRUE";
-			} catch(Exception e) {
+		fPath = application.getRealPath("/Users/"+id+"_이용내역.txt");
+		try {
+			writer = new PrintWriter(fPath, "UTF-8");
+			result = "TRUE";
+		} catch(Exception e) {
 			result = "FAIL";
 		}
 	}
