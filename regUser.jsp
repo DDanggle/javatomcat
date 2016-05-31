@@ -28,8 +28,7 @@
 		result = "FAIL";
 	}else{
 		fPath = application.getRealPath("/Users/"+id+".txt");		
-		
-			
+		writer = new PrintWriter(fPath, "UTF-8");
 		
 		fPath = application.getRealPath("/Users/"+id+"_이용내역.txt");
 		try {
