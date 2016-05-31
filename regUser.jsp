@@ -36,11 +36,11 @@
 			result = "FAIL";
 		}
 		String temp = "_이용내역.txt";
-		try {
-			fPath = application.getRealPath("/Users/")+id+temp;
+			fPath = application.getRealPath("/Users/"+id+temp);
+		try {	
 			PrintWriter writer = new PrintWriter(fPath, "UTF-8");
 			result = "TRUE";
-		}catch(Exception e){
+		} catch(Exception e){
 			result = "FAIL";
 		}
 	}
