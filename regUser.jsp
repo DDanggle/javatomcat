@@ -34,9 +34,9 @@
 			writer.println(50000);
 			result = "TRUE";
 		
-		fPath1 = application.getRealPath("/Users/"+id+"_이용내역.txt");
+		fPath = application.getRealPath("/Users/"+id+"_이용내역.txt");
 		try {
-			writer = new PrintWriter(fPath1, "UTF-8");
+			writer = new PrintWriter(fPath, "UTF-8");
 			result = "TRUE";
 		} catch(Exception e) {
 			result = "FAIL";
