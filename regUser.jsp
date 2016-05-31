@@ -37,7 +37,7 @@
 		}
 		String temp = "_이용내역.txt";
 			fPath = application.getRealPath("/Users/"+id+temp);
-			PrintWriter writer = new PrintWriter(fPath, "UTF-8")
+			// PrintWriter writer = new PrintWriter(fPath, "UTF-8");
 			try {
 				result = "TRUE";
 			} catch(Exception e) {
