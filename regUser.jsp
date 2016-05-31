@@ -27,8 +27,8 @@
 	if(isExist){
 		result = "FAIL";
 	}else{
-		fPath = application.getRealPath("/Users/"+id+".txt");		
 		try {
+			fPath = application.getRealPath("/Users/"+id+".txt");		
 			writer = new PrintWriter(fPath, "UTF-8");
 			writer.println(pw);
 			writer.println(50000);
@@ -36,8 +36,9 @@
 		} catch(Exception e) {
 			result = "FAIL";
 		}
-		fPath = application.getRealPath("/Users/"+id+"_이용내역.txt");
+		
 		try {
+			fPath = application.getRealPath("/Users/"+id+"_이용내역.txt");
 			writer = new PrintWriter(fPath, "UTF-8");
 			result = "TRUE";
 		} catch(Exception e) {
